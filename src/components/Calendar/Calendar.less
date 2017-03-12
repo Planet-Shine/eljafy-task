@@ -61,6 +61,7 @@
   top: 0;
   left: 0;
   background: @white;
+  border-collapse: collapse;
 
   font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
   border-width: 4px;
@@ -68,6 +69,8 @@
   font-weight: bold;
   td,
   th {
+    position: relative;
+    overflow: hidden;
     border-width: 2px;
     border-style: solid;
   }
@@ -90,6 +93,8 @@
 .calendar__date-item {
   cursor: pointer;
   user-select: none;
+
+
   &.calendar__date-item_active,
   &:hover:not(.calendar__date-item_other-month) {
     .calendar__date-box {
@@ -100,37 +105,55 @@
 }
 
 .calendar__date-box {
+  position: relative;
   display: block;
   width: 100%;
-  height: 100%;
-  padding-top: 50%;
+  padding-top: 110%;
+  margin-bottom: -10%;
 }
 
 .calendar__date-hint {
+  position: absolute;
+  width: 100%;
+  top: 47.5%;
   display: block;
-  font-size: 16px;
-  line-height: 20px; // todo: @line-height-computed
+  line-height: 20px;
   margin-top: -10px;
 }
 
 .calendar__header {
   position: relative;
   height: @calendar-header-height;
-}
-
-.calendar__header-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  &:after {
+    position: relative;
+    content: '';
+    display: block;
+    padding-top: 14.33%;
+    width: 100%;
+  }
 }
 
 table>tbody>tr.calendar__week-header>th {
-    user-select: none;
-    cursor: default;
-    line-height: @calendar-week-header-height; // todo: @line-height-computed
-    height: @calendar-week-header-height;
-    font-size: 16px;
+  user-select: none;
+  cursor: default;
+  line-height: @calendar-week-header-height;
+  height: @calendar-week-header-height;
+  &:after {
+    position: relative;
+    content: '';
+    display: block;
+    padding-top: 51.28%;
+    width: 100%;
+  }
+  .calendar__week-header-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: block;
     font-weight: bold;
+    line-height: 20px;
+    margin-top: -10px;
+  }
 }
 
 .calendar__date-item_other-month {
@@ -151,6 +174,7 @@ table>tbody>tr.calendar__week-header>th {
   height: 100%;
   cursor: pointer;
   overflow: visible;
+  z-index: 1;
 }
 
 .calendar__button-previous {
@@ -168,8 +192,7 @@ table>tbody>tr.calendar__week-header>th {
   top: 50%;
   left: 12.5%;
   height: 0;
-  // font-size: 14.5px; // todo : font-size small
-  line-height: 20px; // todo: @line-height-computed
+  line-height: 20px;
   margin-top: -10px;
 }
 

@@ -53,7 +53,7 @@ class CalendarDate extends Component {
                 style={style}
                 onClick={this.handleClick}>
                 <span className="calendar__date-box">
-                    <span className="calendar__date-hint">
+                    <span className="calendar__date-hint text-center">
                         {date.getDate()}
                     </span>
                 </span>

@@ -2,5 +2,4 @@
 https://docs.google.com/document/d/1-MVlwJZY9GzGV2jEVxN4hChMVeL0yKDRndvsn_SA4Ek/edit
 
 
-9. Сделать так, чтобы верстка опиралась на bootstrap.
-11. Почистить проект.
+1. Исправить Safari.

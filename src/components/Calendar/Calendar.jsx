@@ -62,7 +62,12 @@ class Calendar extends Component {
         return (
             <tr className="calendar__week-header">
                 {weekDays.map(
-                    (weekDay, index) => <th key={index} className="text-center">{weekDay}</th>
+                    (weekDay, index) =>
+                        <th key={index} className="text-center">
+                            <div className="calendar__week-header-text">
+                                {weekDay}
+                            </div>
+                        </th>
                 )}
             </tr>
         );
