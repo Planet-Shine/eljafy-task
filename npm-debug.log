@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'F:\\Program Files\\node.exe',
+1 verbose cli   'C:\\Users\\Stalevar\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'devserver' ]
+2 info using npm@3.10.9
+3 info using node@v4.4.4
+4 verbose run-script [ 'predevserver', 'devserver', 'postdevserver' ]
+5 info lifecycle eljafy-task@1.0.0~predevserver: eljafy-task@1.0.0
+6 silly lifecycle eljafy-task@1.0.0~predevserver: no script for predevserver, continuing
+7 info lifecycle eljafy-task@1.0.0~devserver: eljafy-task@1.0.0
+8 verbose lifecycle eljafy-task@1.0.0~devserver: unsafe-perm in lifecycle true
+9 verbose lifecycle eljafy-task@1.0.0~devserver: PATH: C:\Users\Stalevar\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;F:\projects\eljafy-task\node_modules\.bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Ruby19\bin;C:\Program Files\PHP\v5.3;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\CMake\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\SlikSvn\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;F:\Program Files\Git\cmd;F:\Program Files\;C:\Program Files (x86)\curl;C:\Program Files (x86)\Skype\Phone\;C:\Users\Stalevar\node_modules\karma\bin;C:\Program Files\Java\jdk1.7.0_60\bin;C:\pf\android-sdk\tools;C:\pf\android-sdk\platform-tools;C:\Users\Stalevar\AppData\Roaming\npm
+10 verbose lifecycle eljafy-task@1.0.0~devserver: CWD: F:\projects\eljafy-task
+11 silly lifecycle eljafy-task@1.0.0~devserver: Args: [ '/d /s /c',
+11 silly lifecycle   'webpack-dev-server --debug --hot --devtool inline-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8090 --host 0.0.0.0' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:870:11)
+12 verbose stack     at process.kill (node.js:777:15)
+12 verbose stack     at process.listener (C:\Users\Stalevar\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:72:20)
+12 verbose stack     at process.emit (events.js:166:7)
+12 verbose stack     at processEmit (C:\Users\Stalevar\AppData\Roaming\npm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Users\Stalevar\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (node.js:804:46)
+13 verbose cwd F:\projects\eljafy-task
+14 error Windows_NT 6.1.7601
+15 error argv "F:\\Program Files\\node.exe" "C:\\Users\\Stalevar\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "devserver"
+16 error node v4.4.4
+17 error npm  v3.10.9
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
